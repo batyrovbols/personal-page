@@ -1,0 +1,19 @@
+body {
+    font-family: Arial;
+}
+#header {
+    background-color: dimgray
+}
+#header {
+    border-bottom: .5rem solid lightgreen;
+}
+*{
+    margin: 0;
+}
+#about {
+    display: flex;
+}
+#about h3 {
+    width: 10rem;
+    margin: 0 auto;
+}
