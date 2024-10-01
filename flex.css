@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+   }
+   body {
+   background: url("image-web-address"); /* replace yellow image web address FuMing emails you */
+   opacity: .5;
+   background-repeat: no-repeat;
+   }
+   .container {
+   max-width: 1400px;
+   }
+   .container > * {
+   background-color: lightblue;
+   font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+   }
+   
