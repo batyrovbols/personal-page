@@ -3,7 +3,7 @@
     box-sizing: border-box;
    }
    body {
-   background: url("image-web-address"); /* replace yellow image web address FuMing emails you */
+   background: url("image-web-address"); 
    opacity: .5;
    background-repeat: no-repeat;
    }
