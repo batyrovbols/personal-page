@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+    <link rel="stylesheet" href="grid4.css" class="style">
+</head>
+
+<body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <img src='https://cdn.imgchest.com/files/3yrgczd8n4z.png' style='position: absolute; top:0; left:0;z-index:-1'>
+    <div class="container">
+        <div class="box1">1
+            <ul>
+                <img src="https://banks.kg/images/logo.png" alt="logo">
+                <li class="Logo">BANKS</li>
+            </ul>
+        </div>
+        <div class="box2">2
+            <ul>
+                <img src="https://banks.kg/images/best-credits.png?7773494fbffd72dcbe704375b5837de3" alt="hero">
+                <li class="Hero">ПОДБЕРЕМ ДЛЯ ВАС
+                    Выгодные Кредиты
+                    Заполните единую онлайн-заявку,и мы
+                    покажем банки, в которых у вас есть высокая
+                    вероятность получить кредит
+                    ПОДОБРАТЬ КРЕДИТ
+                </li>
+            </ul>
+        </div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5
+            <ul>
+                <li class="banks">Банки</li>
+                <li class="credits">Кредиты</li>
+                <li class="vklad">Вклады</li>
+                <li class="cards">Карты </li>
+                <li class="micro">Микрокредиты</li>
+                <li class="another">Еще</li>
+            </ul>
+        </div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+    </div>
+    <script>
+        function switchStyle() {
+        let style = document.querySelector('.style');
+        if (style.getAttribute('href') == 'grid4.css') {
+        style.setAttribute('href', 'grid2.css');
+        } else {
+        style.setAttribute('href', 'grid4.css');
+        }
+        }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family="&A372&"');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img:nth-of-type(1) {
+    display: none;
+}
+
+body {
+    background-image: none;
+    background-repeat: no-repeat;
+    max-width: 1143px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: 1;
+    color: blue;
+}
+body > img:nth-of-type(1) {
+    display: none;
+   }
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(77px, auto) minmax(438px, auto)  498px 196px 302px;
+    grid-template-columns: 250px 705px 347px ;
+    grid-template-areas:
+        "one six six"
+        "five two two"
+        "seven three three"
+        "seven four four";
+    /*grid-template-columns: 250px 705px 347px 1300px 1300px 1300px;*/
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        /* Two columns */
+        grid-template-areas:
+            "one one"
+            "five six"
+            "two two"
+            "three three"
+            "four four"
+            "seven seven";
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+        /* Single column */
+        grid-template-areas:
+            "one"
+            "five"
+            "six"
+            "two"
+            "three"
+            "four"
+            "seven";
+    }
+}
+
+
+.container>* {
+    border: 2px dashed blue;
+    text-align: center;
+}
+
+.box1 {
+    grid-area: one;
+    display: flex;
+}
+.box1>ul {
+    flex-direction: column;
+    text-transform: uppercase;
+
+    font-family: 'Lora';
+    font-size: 20px;
+    font-weight: normal;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    background-color: #fff;
+    background-image: url(https://banks.kg/images/logo.png);
+    color: #000;
+
+    max-width: 100%;
+    min-height: 100%;
+    align-items: center;
+
+    opacity: 0.3;
+}
+
+.box2 {
+    grid-area: two;
+    display: flex;
+}
+.box2>ul {
+    flex-direction: column;
+    text-transform: uppercase;
+
+    font-family: 'Lora';
+    font-size: 20px;
+    font-weight: normal;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    background-color: #fff;
+    background-image:url(https://banks.kg/images/best-credits.png?7773494fbffd72dcbe704375b5837de3);
+    color: #000;
+
+    max-width: 100%;
+    min-height: 100%;
+    align-items: center;
+
+    opacity: 0.3;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+    display: flex;
+}
+
+.box5>ul {
+    flex-direction: column;
+    text-transform: uppercase;
+
+    font-family: 'Lora';
+    font-size: 20px;
+    font-weight: normal;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    background-color: #fff;
+    color: #000;
+
+    max-width: 100%;
+    min-height: 100%;
+    align-items: center;
+
+    opacity: 0.3;
+}
+
+li {
+    padding-top: 60px;
+    margin-left: 60px;
+    border-bottom: 1px solid #000;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    grid-area: seven;
+}
+/*.banks { 
+    padding-left: 95px;
+    flex-basis: 185px; 
+} 
+.credits {
+    flex-basis: 110px;
+}
+.vklad {
+    flex-basis: 100px;
+}
+.cards {
+    flex-basis: 90px;
+}
+.micro {
+    flex-basis: 140px;
+}
+.another {
+    flex-basis: 75px;
+}*/
