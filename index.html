@@ -1,49 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <link rel="stylesheet" href="style.css">
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>My Personal Page</title>
- </head>
- <body>
-    <div id="header">
-        <h1>Batyrov Bolsunbek</h1>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style2.css" class="style">
+</head>
+
+<body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    <!-- <img src='https://cdn.imgchest.com/files/3yrgczd8n4z.png' style='position: absolute; top:0; left:0;z-index:-1'> -->
+    <div class="container">
+
+
+        <div class="box1">
+            <ul>
+                <img src="https://banks.kg/images/logo.png" alt="logo" class="logo1">
+            </ul>
         </div>
-        <div id="title">
-        <h2>Hello everyone</h2>
-        <p>"Success is not final, failure is not fatal: It is the courage to continue that counts." 
-            - Winston Churchill</p>
+
+
+        <div class="box2">
+            <ul>
+                
+                <li class="b1">
+                    ПОДБЕРЕМ ДЛЯ ВАС
+                </li>
+                <li class="b2">
+                    Выгодные Кредиты
+                </li>
+                <li class="b3">
+                    Заполните единую онлайн-заявку,и мы
+                    покажем банки, в которых у вас есть высокая
+                    вероятность получить кредит.
+                </li>
+                <!-- <img src="https://banks.kg/images/best-credits.png?7773494fbffd72dcbe704375b5837de3" alt="top" class="top1"> -->
+            </ul>
         </div>
-        <div id="about">
-        <img src="https://i.ibb.co/1qffpvP/newFace.jpg"
-        alt="Me">
-        <div>
-            <h3>ABOUT</h3>
-        <p>My name is Bolsunbek Batyrov. I'm 20 years old. I have little brother and little sister. I like to play football. My favourite Football club is FC Barcelona.</p>
+
+
+
+        <div class="box3">
+            <ul>
+            <li class="credits2">КРЕДИТЫ</li>
+            <li class="vklad2">ВКЛАДЫ</li>
+            <li class="Pay">ПЛАТЕЖНЫЕ КАРТЫ</li>
+        </ul>
         </div>
+        <div class="box4">
+            <ul>
+                <!-- <img src="https://ibb.co/wNwXM1z" alt="bo4" class="log"> -->
+            </ul>
+            </div>
+        <div class="box5">
+            <ul>
+                <li class="banks">Банки</li>
+                <li class="credits">Кредиты</li>
+                <li class="vklad">Вклады</li>
+                <li class="cards">Карты </li>
+                <li class="micro">Микрокредиты</li>
+                <li class="another">Еще</li>
+            </ul>
         </div>
-        <h3>Favourites</h3>
-        <div id="fav">
-        <ol>
-        <li>Adana Kebab</li>
-        <li>Pizza</li>
-        <li>Sushi</li>
-        </ol>
-        <ol>
-        <li>My Mother</li>
-        <li>My Father</li>
-        <li>My Sister</li>
-        </ol>
-        <ol>
-        <li>Interstellar</li>
-        <li>Inception</li>
-        <li>Forrest Gump</li>
-        </ol>
+
+
+        <div class="box6">
+            <ul>
+                <li class="Kursy">Курсы валют</li>
+            </ul>
         </div>
-        <div id="wish">
-            <h3>Wished</h3>
-        <p>I dream of visiting every country in the world to experience diverse cultures, traditions, and unique places.</p>
-        </div>
- </body>
+
+
+    </div>
+    <script>
+        function switchStyle() {
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'style2.css') {
+                style.setAttribute('href', 'style.css');
+            } else {
+                style.setAttribute('href', 'style2.css');
+            }
+        }
+    </script>
+</body>
+
 </html>
